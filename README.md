@@ -22,6 +22,7 @@ React
 - [ ] Add external social media links using HStack and FontAwesomeIcon.
 - [ ] Add internal links to "Projects" and "Contact Me" sections.
 - [ ] Ensure smooth scrolling and URL update on link click.
+- [ ] Implement header show/hide animation based on scroll direction using useEffect, useRef, and scroll event listeners.
 
 ### 2. Landing Section
 
@@ -50,7 +51,3 @@ React
 
 - [ ] Connect form onSubmit with Formik’s handleSubmit.
 - [ ] Display a success alert and reset the form upon successful submission.
-
-### 5. Header Section:
-
-- [ ] Implement header show/hide animation based on scroll direction using useEffect, useRef, and scroll event listeners.
