@@ -19,18 +19,18 @@ React
 
 ### 1. Header Section
 
-- [ ] Add external social media links using HStack and FontAwesomeIcon.
-- [ ] Add internal links to "Projects" and "Contact Me" sections.
-- [ ] Ensure smooth scrolling and URL update on link click.
+- [x] Add external social media links using HStack and FontAwesomeIcon.
+- [x] Add internal links to "Projects" and "Contact Me" sections.
+- [x] Ensure smooth scrolling and URL update on link click.
 - [ ] Implement header show/hide animation based on scroll direction using useEffect, useRef, and scroll event listeners.
 
 ### 2. Landing Section
 
-- [ ] Implement with avatar, greeting, and role description using provided variables.
+- [x] Implement with avatar, greeting, and role description using provided variables.
 
 ### 3. Projects Section
 
-- [ ] Implement the Card component for displaying projects using Chakra UI components.
+- [x] Implement the Card component for displaying projects using Chakra UI components.
 
 ### 4. Contact Me Section
 
