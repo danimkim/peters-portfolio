@@ -77,7 +77,20 @@ const Header = () => {
               ))}
             </HStack>
           </nav>
-          <nav></nav>
+          <nav>
+            <HStack spacing={8}>
+              {menus.map((menu) => (
+                <a
+                  key={menu.id}
+                  onClick={() =>
+                    handleClick(menu.name.split(" ").join("").toLowerCase())
+                  }
+                >
+                  {menu.name}
+                </a>
+              ))}
+            </HStack>
+          </nav>
         </HStack>
       </Box>
     </Box>

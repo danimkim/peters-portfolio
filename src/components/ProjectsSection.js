@@ -38,7 +38,11 @@ const ProjectsSection = () => {
       p={8}
       alignItems="flex-start"
       spacing={8}
-    ></FullScreenSection>
+    >
+      <Heading as="h1" id="projects-section">
+        Featured Projects
+      </Heading>
+    </FullScreenSection>
   );
 };
 
