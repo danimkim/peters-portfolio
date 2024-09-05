@@ -36,18 +36,18 @@ React
 
 #### 4-1. Form Logic
 
-- [ ] Configure useFormik with initialValues, onSubmit, and validationSchema.
-- [ ] Validate fields with Yup (required fields, email validation, minimum character length).
+- [x] Configure useFormik with initialValues, onSubmit, and validationSchema.
+- [x] Validate fields with Yup (required fields, email validation, minimum character length).
 
 #### 4-2. Controlled Components
 
-- [ ] Make input fields controlled using getFieldProps.
+- [x] Make input fields controlled using getFieldProps.
 
 #### 4-3. Error Handling
 
-- [ ] Display error messages using isInvalid and FormErrorMessage.
+- [x] Display error messages using isInvalid and FormErrorMessage.
 
 #### 4-4. Form Submission
 
-- [ ] Connect form onSubmit with Formik’s handleSubmit.
+- [x] Connect form onSubmit with Formik’s handleSubmit.
 - [ ] Display a success alert and reset the form upon successful submission.

@@ -28,7 +28,10 @@ const LandingSection = () => {
       type: "hireMe",
       comment: "",
     },
-    onSubmit: (values) => {},
+    onSubmit: (values) => {
+      submit("", values);
+      onOpen(response.type, response.message);
+    },
     validationSchema: Yup.object().shape({
       firstName: Yup.string().required("Required"),
       email: Yup.string().required("Required").email("Invalid email address"),
@@ -51,7 +54,7 @@ const LandingSection = () => {
           Contact me
         </Heading>
         <Box p={6} rounded="md" w="100%">
-          <form>
+          <form onSubmit={formik.handleSubmit}>
             <VStack spacing={4}>
               <FormControl
                 isInvalid={formik.touched.firstName && formik.errors.firstName}
@@ -109,7 +112,12 @@ const LandingSection = () => {
                 />
                 <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
               </FormControl>
-              <Button type="submit" colorScheme="purple" width="full">
+              <Button
+                type="submit"
+                colorScheme="purple"
+                width="full"
+                isLoading={isLoading}
+              >
                 Submit
               </Button>
             </VStack>
