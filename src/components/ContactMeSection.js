@@ -24,7 +24,14 @@ const LandingSection = () => {
   const formik = useFormik({
     initialValues: {},
     onSubmit: (values) => {},
-    validationSchema: Yup.object(),
+    validationSchema: Yup.object().shape({
+      firstName: Yup.string().required("Required"),
+      email: Yup.string().required("Required").email("Invalid email address"),
+      type: Yup.string().optional(),
+      comment: Yup.string()
+        .required("Required")
+        .min(25, "Must be at least 25 characters"),
+    }),
   });
 
   return (
